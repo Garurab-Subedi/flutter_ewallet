@@ -1,9 +1,15 @@
 import 'package:get/get.dart';
 
+import '../modules/balance/bindings/balance_binding.dart';
+import '../modules/balance/views/balance_view.dart';
+import '../modules/bottomnavigation/bindings/bottomnavigation_binding.dart';
+import '../modules/bottomnavigation/views/bottomnavigation_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/onboarding/bindings/onboarding_binding.dart';
 import '../modules/onboarding/views/onboarding_view.dart';
+import '../modules/phonenumber/bindings/phonenumber_binding.dart';
+import '../modules/phonenumber/views/phonenumber_view.dart';
 import '../modules/signin/bindings/signin_binding.dart';
 import '../modules/signin/views/signin_view.dart';
 import '../modules/signup/bindings/signup_binding.dart';
@@ -44,6 +50,21 @@ class AppPages {
       name: _Paths.SIGNIN,
       page: () => const SigninView(),
       binding: SigninBinding(),
+    ),
+    GetPage(
+      name: _Paths.PHONENUMBER,
+      page: () => const PhonenumberView(),
+      binding: PhonenumberBinding(),
+    ),
+    GetPage(
+      name: _Paths.BOTTOMNAVIGATION,
+      page: () => const BottomnavigationView(),
+      binding: BottomnavigationBinding(),
+    ),
+    GetPage(
+      name: _Paths.BALANCE,
+      page: () => const BalanceView(),
+      binding: BalanceBinding(),
     ),
   ];
 }

@@ -10,6 +10,7 @@ dependencies:
   get: 4.6.5
   google_fonts: ^5.1.0
   smooth_page_indicator: ^1.1.0
+  dropdown_textfield: ^1.0.8
   flutter: 
     sdk: flutter
 

@@ -90,30 +90,28 @@ class SignupView extends GetView<SignupController> {
                       const SizedBox(
                         width: 8,
                       ),
-                      Expanded(
-                        child: Container(
-                          height: 40,
-                          // width: Get.width * 0.4,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(8),
-                            border: Border.all(
-                              color: lineStroke,
-                            ),
-                          ),
-                          child: TextField(
-                            autocorrect: false,
-                            style: regular.copyWith(
-                              fontSize: 12,
-                              color: darkerBlack,
-                            ),
-                            decoration: const InputDecoration(
-                                border: InputBorder.none,
-                                contentPadding:
-                                    EdgeInsets.fromLTRB(16, 0, 16, 10),
-                                hintText: 'Last Name'),
+                      Container(
+                        height: 40,
+                        width: Get.width * 0.4,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8),
+                          border: Border.all(
+                            color: lineStroke,
                           ),
                         ),
-                      ),
+                        child: TextField(
+                          autocorrect: false,
+                          style: regular.copyWith(
+                            fontSize: 12,
+                            color: darkerBlack,
+                          ),
+                          decoration: const InputDecoration(
+                              border: InputBorder.none,
+                              contentPadding:
+                                  EdgeInsets.fromLTRB(16, 0, 16, 10),
+                              hintText: 'Last Name'),
+                        ),
+                      ), 
                     ],
                   ),
                   const SizedBox(

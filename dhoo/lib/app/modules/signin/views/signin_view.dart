@@ -139,7 +139,7 @@ class SigninView extends GetView<SigninController> {
                   ),
                   GestureDetector(
                       onTap: () {
-                        Get.offAllNamed(Routes.HOME);
+                        Get.toNamed(Routes.PHONENUMBER);
                       },
                       child: const ButtonWidgets(
                         label: 'Sign In',
