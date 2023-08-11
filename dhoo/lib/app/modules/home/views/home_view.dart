@@ -373,6 +373,94 @@ class HomeView extends GetView<HomeController> {
                                       ))
                                     ],
                                   ),
+                                  const SizedBox(
+                                    height: 16,
+                                  ),
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Row(
+                                        children: [
+                                          const CircleAvatar(
+                                            backgroundColor: purple,
+                                            child: Text('T'),
+                                          ),
+                                          const SizedBox(
+                                            width: 16,
+                                          ),
+                                          Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                'Top Up',
+                                                style: semibold.copyWith(
+                                                    fontSize: 12),
+                                              ),
+                                              Text(
+                                                '09.00 Am',
+                                                style: semibold.copyWith(
+                                                    fontSize: 12,
+                                                    color: darkGrey),
+                                              )
+                                            ],
+                                          )
+                                        ],
+                                      ),
+                                      Expanded(
+                                          child: Text(
+                                        '-Rp 500.00',
+                                        style: semibold.copyWith(
+                                            fontSize: 12, color: subtleRed),
+                                        textAlign: TextAlign.right,
+                                      ))
+                                    ],
+                                  ),
+                                  const SizedBox(
+                                    height: 16,
+                                  ),
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Row(
+                                        children: [
+                                          const CircleAvatar(
+                                            backgroundColor: purple,
+                                            child: Text('T'),
+                                          ),
+                                          const SizedBox(
+                                            width: 16,
+                                          ),
+                                          Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                'Top Up',
+                                                style: semibold.copyWith(
+                                                    fontSize: 12),
+                                              ),
+                                              Text(
+                                                '09.00 Am',
+                                                style: semibold.copyWith(
+                                                    fontSize: 12,
+                                                    color: darkGrey),
+                                              )
+                                            ],
+                                          )
+                                        ],
+                                      ),
+                                      Expanded(
+                                          child: Text(
+                                        '-Rp 500.00',
+                                        style: semibold.copyWith(
+                                            fontSize: 12, color: subtleRed),
+                                        textAlign: TextAlign.right,
+                                      ))
+                                    ],
+                                  ),
                                 ],
                               ),
                             )
