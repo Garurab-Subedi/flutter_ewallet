@@ -16,6 +16,8 @@ import '../modules/signup/bindings/signup_binding.dart';
 import '../modules/signup/views/signup_view.dart';
 import '../modules/splash_screen/bindings/splash_screen_binding.dart';
 import '../modules/splash_screen/views/splash_screen_view.dart';
+import '../modules/wallet/bindings/wallet_binding.dart';
+import '../modules/wallet/views/wallet_view.dart';
 
 part 'app_routes.dart';
 
@@ -65,6 +67,11 @@ class AppPages {
       name: _Paths.BALANCE,
       page: () => const BalanceView(),
       binding: BalanceBinding(),
+    ),
+    GetPage(
+      name: _Paths.WALLET,
+      page: () => const WalletView(),
+      binding: WalletBinding(),
     ),
   ];
 }

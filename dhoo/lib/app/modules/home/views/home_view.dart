@@ -4,6 +4,7 @@ import 'package:dhoo/app/shared/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../../routes/app_pages.dart';
 import '../../../widgets/MenuItemWidgets.dart';
 import '../controllers/home_controller.dart';
 
@@ -85,34 +86,41 @@ class HomeView extends GetView<HomeController> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            Column(
-                              children: [
-                                Container(
-                                  height: 45,
-                                  width: 45,
-                                  decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.circular(10)),
-                                  child: Container(
-                                    width: 20,
-                                    height: 20,
-                                    decoration: const BoxDecoration(
-                                      image: DecorationImage(
-                                          image: AssetImage(
-                                              'assets/icons/ic_topup.png'),
-                                          scale: 1.5),
+                            GestureDetector(
+                              onTap: () {
+                                print('wallet tapperd');
+                                Get.toNamed(Routes.WALLET);
+                              },
+                              child: Column(
+                                children: [
+                                  Container(
+                                    height: 45,
+                                    width: 45,
+                                    decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        borderRadius:
+                                            BorderRadius.circular(10)),
+                                    child: Container(
+                                      width: 20,
+                                      height: 20,
+                                      decoration: const BoxDecoration(
+                                        image: DecorationImage(
+                                            image: AssetImage(
+                                                'assets/icons/ic_topup.png'),
+                                            scale: 1.5),
+                                      ),
                                     ),
                                   ),
-                                ),
-                                const SizedBox(
-                                  height: 10,
-                                ),
-                                Text(
-                                  'Topup',
-                                  style: regular.copyWith(
-                                      fontSize: 12, color: Colors.white),
-                                )
-                              ],
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
+                                  Text(
+                                    'Topup',
+                                    style: regular.copyWith(
+                                        fontSize: 12, color: Colors.white),
+                                  )
+                                ],
+                              ),
                             ),
                             Column(
                               children: [

@@ -11,6 +11,7 @@ abstract class Routes {
   static const PHONENUMBER = _Paths.PHONENUMBER;
   static const BOTTOMNAVIGATION = _Paths.BOTTOMNAVIGATION;
   static const BALANCE = _Paths.BALANCE;
+  static const WALLET = _Paths.WALLET;
 }
 
 abstract class _Paths {
@@ -23,4 +24,5 @@ abstract class _Paths {
   static const PHONENUMBER = '/phonenumber';
   static const BOTTOMNAVIGATION = '/bottomnavigation';
   static const BALANCE = '/balance';
+  static const WALLET = '/wallet';
 }
